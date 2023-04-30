@@ -14,6 +14,7 @@ chat_app = inworld_chat.InWorldChat('inworld_key',
 
 chat_app.setup()
 
+#rename the command your bot name
 @bot.command()
 async def iw(ctx, *, query):
     out = chat_app.chat(query, str(ctx.author), str(ctx.channel.id), str(ctx.author.id))
