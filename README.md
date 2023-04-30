@@ -13,7 +13,7 @@ pip install inword_python
 Note: If you don't have node js installed also do the following
 ```python
 pip install 'nodejs-bin[cmd]'
-``
+```
 
 Usage for dummies even.
 
