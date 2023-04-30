@@ -8,7 +8,7 @@ Developed by Edgelord and ChatGPT (c) 2023
 
 Installation
 ```python
-pip install inword_python
+pip install inworld-python==0.0.9
 ```
 Note: If you don't have node js installed also do the following
 ```python
