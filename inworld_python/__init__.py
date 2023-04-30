@@ -1,1 +1,1 @@
-from inworld_python import InWorldChat
+from inworld_python import inworld_chat
