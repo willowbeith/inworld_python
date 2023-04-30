@@ -8,7 +8,7 @@ Developed by Edgelord and ChatGPT (c) 2023
 
 Installation
 ```python
-pip install inworld-python==0.0.9
+pip install inworld-python==0.0.10
 ```
 Note: If you don't have node js installed also do the following
 ```python
@@ -21,7 +21,7 @@ Usage for dummies even.
 from inworld_python import inworld_chat
 
 chat_app = inworld_chat.InWorldChat('inworld_key', 
-                       'inworld_scene', 
+                       'inworld_secret', 
                        'inworld_scene'
                       )
 
