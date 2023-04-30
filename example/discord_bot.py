@@ -1,3 +1,4 @@
+import discord
 from discord.ext import commands
 from inworld_python import inworld_chat
 
