@@ -16,7 +16,7 @@ chat_app.setup()
 @bot.command()
 async def iw(ctx, *, query):
     out = chat_app.chat(query, str(ctx.author), str(ctx.channel.id), str(ctx.author.id))
-    await ctx.send(out)
+    await ctx.reply(out)
 
 @bot.event
 async def on_ready():
