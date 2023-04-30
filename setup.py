@@ -7,22 +7,22 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.0.13'
-DESCRIPTION = 'Streaming video data via networks'
-LONG_DESCRIPTION = 'A package that allows to build simple streams of video, audio and camera data.'
+VERSION = '0.0.1'
+DESCRIPTION = 'Inworld Wrapper for Python'
+LONG_DESCRIPTION = 'A python package that allows a user to create chat apps using inworld.'
 
 # Setting up
 setup(
     name="vidstream",
     version=VERSION,
-    author="NeuralNine (Florian Dedov)",
-    author_email="<mail@neuralnine.com>",
+    author="Edgelord (Lucky Robinson)",
+    author_email="<luckstarsfilm@gmail.com>",
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description=long_description,
     packages=find_packages(),
-    install_requires=['opencv-python', 'pyautogui', 'pyaudio'],
-    keywords=['python', 'video', 'stream', 'video stream', 'camera stream', 'sockets'],
+    install_requires=['nodejs-bin'],
+    keywords=['python', 'Inworld', 'NPC', 'Game Characters'],
     classifiers=[
         "Development Status :: 1 - Planning",
         "Intended Audience :: Developers",
