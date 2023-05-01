@@ -31,3 +31,6 @@ print(out)
 
 
 ```
+
+For addition usage, see the examples directory 
+Here [link](https://github.com/atorsvn/inworld_python/tree/main/examples)
