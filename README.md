@@ -29,8 +29,7 @@ chat_app.setup()
 out = chat_app.chat("What did I just ask?", "blowhard", "3232323", "23232323")
 print(out)
 
-
 ```
 
-For addition usage, see the examples directory 
+For examples, see the examples directory 
 Here [link](https://github.com/atorsvn/inworld_python/tree/main/examples)
