@@ -4,28 +4,26 @@ import gradio as gr
 # Initialize the InWorldChat object
 chat_app = inworld_chat.InWorldChat('inworld_key', 'inworld_secret', 'inworld_scene')
 
-# installs the inworld command in the current directory as iw.js
-chat_app.setup()
+chat_app = inworld_chat.InWorldChat('oo60Qw8Rf3sFrV1M8arogXNnJpg6H1to',
+                                    'eVvEBmhcUXIkDLtpz6ITy5eUIbFH3QvvS9iqsH3lMtz3WTZI875cI8tL5tdLlWcj',
+                                    'workspaces/default-maeuu0gwbokyxhccs-bkaa/characters/asuka')
 
-def chat(query: str, user_name: str = "blowhard", channel_id: str = "3232323", user_id: str = "23232323"):
-    """
-    Function to be used in the Gradio interface.
-    It takes the input from the user and sends it to the chat.
-
-    :param query: string, message to chat
-    :param user_name: string, user name
-    :param channel_id: string, channel id
-    :param user_id: string, user id
-    :return: string, chat output
-    """
-    # Send the message to the chat and get the response
+def chat(query, user_name, channel_id, user_id):
+    # Set up the app
+    chat_app.setup()
+    
+    # Perform the chat
     out = chat_app.chat(query, user_name, channel_id, user_id)
+    
     return out
 
-# Define Gradio interface
 iface = gr.Interface(fn=chat, 
-                     inputs="text", 
-                     outputs="text")
+                     inputs=[gr.inputs.Textbox(lines=2, placeholder="Enter query here..."), 
+                             gr.inputs.Textbox(lines=1, placeholder="Enter user name here..."), 
+                             gr.inputs.Textbox(lines=1, placeholder="Enter channel ID here..."), 
+                             gr.inputs.Textbox(lines=1, placeholder="Enter user ID here...")], 
+                     outputs=gr.outputs.Textbox())
 
-# Launch the interface
-iface.launch()
+# Launch the interface on your local network
+iface.launch(share=True)
+
