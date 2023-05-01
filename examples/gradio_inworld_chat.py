@@ -4,10 +4,6 @@ import gradio as gr
 # Initialize the InWorldChat object
 chat_app = inworld_chat.InWorldChat('inworld_key', 'inworld_secret', 'inworld_scene')
 
-chat_app = inworld_chat.InWorldChat('oo60Qw8Rf3sFrV1M8arogXNnJpg6H1to',
-                                    'eVvEBmhcUXIkDLtpz6ITy5eUIbFH3QvvS9iqsH3lMtz3WTZI875cI8tL5tdLlWcj',
-                                    'workspaces/default-maeuu0gwbokyxhccs-bkaa/characters/asuka')
-
 def chat(query, user_name, channel_id, user_id):
     # Set up the app
     chat_app.setup()
