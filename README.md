@@ -20,10 +20,7 @@ Usage for dummies even.
 ```python
 from inworld_python import inworld_chat
 
-chat_app = inworld_chat.InWorldChat('inworld_key', 
-                       'inworld_secret', 
-                       'inworld_scene'
-                      )
+chat_app = inworld_chat.InWorldChat('inworld_key', 'inworld_secret', 'inworld_scene')
 
 # installs the inworld command in the current directory as iw.js
 chat_app.setup()
