@@ -10,10 +10,10 @@ intents.message_content = True
 
 # Initialize the Bot object with the "!" command prefix
 # and the specified intents
-bot = commands.Bot(command_prefix="!", intents=intents)
+bot = commands.Bot(command_prefix="!annabella", intents=intents)
 
 # Create an InWorldChat object with the specified key, secret, and scene
-chat_app = inworld_chat.InWorldChat('inworld_key', 'inworld_secret', 'inworld_scene')
+chat_app = inworld_chat.InWorldChat('FiOSdrLV1taDFxAQOZ68V9uHFjAtjaPPjNakUINKKapJcTGCTaznjw9eojNGp8ND', 'xaSYoJOltnzJNLfpcnUky0Z909aQMKRz', 'workspaces/default-pi_sllrv-upltj902robew/characters/annabella')
 
 # Set up the InWorldChat object
 chat_app.setup()
@@ -42,4 +42,4 @@ async def on_ready():
     print('Bot is ready')
 
 # Run the bot with the specified token
-bot.run('your-bot-token')
+bot.run('MTExODI3MzkyODA1NDQ0ODM1MA.GcF-i2.0N51Hug97o1e0Ba7AM-ur0oe1JmntLsywyp2Yw')
